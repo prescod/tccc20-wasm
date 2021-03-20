@@ -365,7 +365,9 @@ int main() {
 export var printInt = i => console.log(i);
                 </code></pre>
                 <p>☃ and load the <code>wasm</code> from a <code>&lt;script type='module'&gt;</code> tag:</p>
-                <pre><code class="html" data-trim>
+
+		    
+		    <pre><code class="html" data-trim>
 &lt;script type='module' src='main.wasm'></script>
                 </code></pre>
                 <p>Imports can also just be functions passed to the JS API:</p>
@@ -382,7 +384,8 @@ Wasm.instantiateModule(codeBytes, {imports});
                 <pre><code class="html" data-trim data-noescape>
 // accum.c
 DLL_EXPORT
-int accum(<span class="fragment highlight-current-blue" data-fragment-index="2">int* i, int* end</span>) {
+int accum(
+pan class="fragment highlight-current-blue" data-fragment-index="2">int* i, int* end</span>) {
     <span class="fragment highlight-current-blue" data-fragment-index="1">int sum = 0;</span>
     <span class="fragment highlight-current-blue" data-fragment-index="3">for (;</span> <span class="fragment highlight-current-blue" data-fragment-index="4">i != end</span>; <span class="fragment highlight-current-blue" data-fragment-index="5">i++</span><span class="fragment highlight-current-blue" data-fragment-index="3">)</span>
         <span class="fragment highlight-current-blue" data-fragment-index="1">sum +=</span> <span class="fragment highlight-current-blue" data-fragment-index="2">*i</span>;
